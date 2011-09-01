@@ -1,14 +1,14 @@
-module Rails3JQueryAutocomplete
+module ClientSideAutocomplete
   module Autocomplete
     def self.included(target)
-      target.extend Rails3JQueryAutocomplete::Autocomplete::ClassMethods
+      target.extend ClientSideAutocomplete::Autocomplete::ClassMethods
 
       if defined?(Mongoid::Document)
-        target.send :include, Rails3JQueryAutocomplete::Orm::Mongoid
+        target.send :include, ClientSideAutocomplete::Orm::Mongoid
       elsif defined?(MongoMapper::Document)
-        target.send :include, Rails3JQueryAutocomplete::Orm::MongoMapper
+        target.send :include, ClientSideAutocomplete::Orm::MongoMapper
       else
-        target.send :include, Rails3JQueryAutocomplete::Orm::ActiveRecord
+        target.send :include, ClientSideAutocomplete::Orm::ActiveRecord
       end
     end
 

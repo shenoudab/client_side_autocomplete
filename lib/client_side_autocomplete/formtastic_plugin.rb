@@ -1,4 +1,4 @@
-module Rails3JQueryAutocomplete
+module ClientSideAutocomplete
   module FormtasticPlugin
     def autocompleted_input(method, options = {})
       if options.key?(:selected) || options.key?(:checked) || options.key?(:default)

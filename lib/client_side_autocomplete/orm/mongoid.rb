@@ -1,4 +1,4 @@
-module Rails3JQueryAutocomplete
+module ClientSideAutocomplete
   module Orm
     module Mongoid
       def get_autocomplete_order(method, options, model=nil)
