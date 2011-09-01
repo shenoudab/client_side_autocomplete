@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = ClientSideAutocomplete::VERSION
   s.authors     = ["Shenouda Bertel"]
   s.email       = ["ShenoudaB@gmail.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "http://mobithought.com"
+  s.summary     = %q{Client Side AutoComplete}
+  s.description = %q{Client Side AutoComplete}
 
   s.rubyforge_project = "client_side_autocomplete"
 
